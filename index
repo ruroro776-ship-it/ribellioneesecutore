@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>1310年のヴェネツィアでの反乱の首謀家は？</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+    }
+    #result {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      color: darkred;
+      display: none;
+    }
+  </style>
+  <script>
+    function checkAnswer() {
+      const input = document.getElementById("answer").value.trim();
+      const result = document.getElementById("result");
+      if (input === "ゴルゴーニュ" || input === "ゴルゴーニュ家") {
+        result.textContent = "サン・ベニート修道院";
+        result.style.display = "block";
+      } else {
+        // 間違っていた場合は何も起こらない
+        result.style.display = "none";
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>1310年のヴェネツィアでの反乱の首謀家は？</h1>
+  <input type="text" id="answer" placeholder="ここに入力してください">
+  <button onclick="checkAnswer()">回答</button>
+  <div id="result"></div>
+</body>
+</html>
